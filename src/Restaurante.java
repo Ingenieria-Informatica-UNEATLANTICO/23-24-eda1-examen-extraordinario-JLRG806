@@ -11,7 +11,7 @@ class Restaurante {
 
         Hamburguesa hamburguesa = bobEsponja.entregar();
 
-
+        System.out.println();
         System.out.println("Prueba de la refactorización:");
 
         System.out.println("Hambuguesa antes de reorganizar, quitar elemento y/o agregar elementos intermendios:");
@@ -36,15 +36,14 @@ class Restaurante {
         hamburguesa.mostrar();
 
         System.out.println("Prueba de la reorganización de elementos:");
-        hamburguesa.reorganizarExtras(5, 2);
+        hamburguesa.reorganizarExtras(4, 2);
         System.out.println("Sale una " + hamburguesa.describir());
         hamburguesa.mostrar();
 
 
         
-        //calamardo.recibir(bobEsponja.entregar());
-
-        //calamardo.servir();
+        calamardo.recibir(bobEsponja.entregar());
+        calamardo.servir();
     }
 
     public static void main(String[] args) {
