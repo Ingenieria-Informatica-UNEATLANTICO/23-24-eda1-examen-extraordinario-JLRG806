@@ -17,8 +17,7 @@ class Hamburguesa {
     }
 
     public void agregarExtra(Extra extra) {
-            extras[extrasAgregados] = extra;
-            extrasAgregados++;
+        extras.add(extra);
     }
 
     public void mostrar() {
@@ -30,8 +29,8 @@ class Hamburguesa {
         panes[1].mostrar();
     }
 
-    public String describir() {   
-        String descripcion; 
+    public String describir() {
+        String descripcion;
         descripcion = panes[0].describir() + ", " + carne.describir();
         for (int i = 0; i < extrasAgregados; i++) {
             descripcion = descripcion + ", " + extras[i].describir();
