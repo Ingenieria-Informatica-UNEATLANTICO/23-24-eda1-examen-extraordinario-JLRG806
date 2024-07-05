@@ -9,7 +9,7 @@ class Hamburguesa {
     private Carne carne;
     private List<Extra> extras;
 
-    public Hamburguesa(Pan panSuperior, Pan panInferior, Carne carne, int numeroExtras) {
+    public Hamburguesa(Pan panSuperior, Pan panInferior, Carne carne) {
         this.panSuperior = panSuperior;
         this.panInferior = panInferior;
         this.carne = carne;
