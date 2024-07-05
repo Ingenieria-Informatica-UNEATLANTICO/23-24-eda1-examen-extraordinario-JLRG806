@@ -1,6 +1,12 @@
 # Refactorización del modelo
 
+> Parte 1 - in plan english
+
+Para refactorizar el modelo con el objetivo de permitir mayor flexibilidad, podemos introducir estructuras de datos más avanzadas que las matrices simples. Utilizaremos listas (GenericList) para manejar los elementos de la hamburguesa. Esto permitirá agregar y eliminar elementos fácilmente, y también reorganizarlos si es necesario.
+
 ### Explicación de los cambios:
+
+> Parte 2 - Dev...
 
 - *Métodos `mostrar`, `describir` y `agregarExtra`*: Se adaptaron para iterar sobre la GenericList de extras en lugar de una matriz.
 
