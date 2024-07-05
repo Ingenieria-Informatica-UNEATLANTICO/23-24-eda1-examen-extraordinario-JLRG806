@@ -30,12 +30,11 @@ class Hamburguesa {
     }
 
     public String describir() {
-        String descripcion;
-        descripcion = panes[0].describir() + ", " + carne.describir();
-        for (int i = 0; i < extrasAgregados; i++) {
-            descripcion = descripcion + ", " + extras[i].describir();
+        StringBuilder descripcion = new StringBuilder(panSuperior.describir() + ", " + carne.describir());
+        for (Extra extra : extras) {
+            descripcion.append(", ").append(extra.describir());
         }
-        descripcion = descripcion + "\n";
-        return descripcion;
+        descripcion.append("\n");
+        return descripcion.toString();
     }
 }
