@@ -21,12 +21,12 @@ class Hamburguesa {
     }
 
     public void mostrar() {
-        panes[0].mostrar();
+        panSuperior.mostrar();
         carne.mostrar();
-        for (int i = 0; i < extrasAgregados; i++) {
-            extras[i].mostrar();
+        for (Extra extra : extras) {
+            extra.mostrar();
         }
-        panes[1].mostrar();
+        panInferior.mostrar();
     }
 
     public String describir() {
