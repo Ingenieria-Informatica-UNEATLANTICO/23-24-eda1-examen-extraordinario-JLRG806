@@ -37,4 +37,27 @@ class Hamburguesa {
         descripcion.append("\n");
         return descripcion.toString();
     }
+
+    public void quitarExtra(int indice) {
+
+        extras.remove(indice);
+        
+    }
+
+    public void reorganizarExtras(int indiceOrigen, int indiceDestino) {
+        if (indiceOrigen >= 0 && indiceOrigen < extras.size() && indiceDestino >= 0 && indiceDestino < extras.size()) {
+            Extra extra = extras.remove(indiceOrigen);
+            extras.add(indiceDestino, extra);
+        } else {
+            throw new IndexOutOfBoundsException("Índice fuera de rango.");
+        }
+    }
+
+    public void insertarExtra(int indice, Extra extra) {
+        if (indice >= 0 && indice <= extras.size()) {
+            extras.add(indice, extra);
+        } else {
+            throw new IndexOutOfBoundsException("Índice fuera de rango.");
+        }
+    }
 }
