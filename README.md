@@ -22,4 +22,4 @@ Para refactorizar el modelo con el objetivo de permitir mayor flexibilidad, pode
 
 ### Pruebas del codigo
 
-En la clase `Restaurante` se ha colocado trasabilidad y uso de las nuevas funcionalidades que tiene la hamburguesa, para identificar las pruebas, se inicia en la linea 15 se inicia hasta la linea 47.
+En la clase `Restaurante` se ha colocado trasabilidad y uso de las nuevas funcionalidades que tiene la hamburguesa, para identificar las pruebas, se inicia en la linea 15 hasta la linea 47.
